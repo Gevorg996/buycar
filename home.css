@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+#filter-section {
+    transition: all 0.3s ease-in-out;
+}
+#filter-section-button {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #383838;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+.filter {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.filter label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.filter select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+}
+#searchBrand{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    margin-bottom: 10px;   
+}
+.filter button {
+    width: 100%;
+    background-color: #383838;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.car-list {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.car-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.car {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.car-link {
+    text-decoration: none;
+    color: inherit;
+}
+.car-image-container {
+    height: 200px; /* Задаем фиксированную высоту контейнера для изображения */
+    width: 100%; /* Ширина 100% для правильного отображения */
+    overflow: hidden; /* Скрытие части изображения, выходящей за границы */
+    display: flex; /* Используем flex-контейнер */
+    justify-content: center; /* Выравниваем содержимое по горизонтали */
+    align-items: center; /* Выравниваем содержимое по вертикали */
+}
+
+.car-image {
+    width: 100%; /* Изображение занимает всю ширину контейнера */
+    height: 100%; /* Изображение занимает всю высоту контейнера */
+    object-fit: cover; /* Масштабируем изображение, чтобы оно полностью заполнило контейнер */
+}
+
+.car-details {
+    padding: 10px;
+}
+
+.car-title {
+    margin: 0;
+    font-size: 18px;
+}
+
+.car-year, .car-price {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.price-number {
+    font-weight: bold;
+}
+
+.no-cars-message {
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0;
+    color: black;
+}

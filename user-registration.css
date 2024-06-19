@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: #383838;
+}
+h1 {
+    text-align: center;
+    margin: 20px;
+    color: black;
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: black;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+}
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+button[type="submit"] {
+    background-color: #383838;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+#captcha-equation{
+    font-size: 25px;
+    color: white;
+}
+.error-messages {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+    form {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    form {
+        max-width: 80%;
+    }
+    button[type="submit"] {
+        font-size: 18px;
+    }
+}
